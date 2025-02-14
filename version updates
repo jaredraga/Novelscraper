@@ -1,0 +1,18 @@
+# Wuxia Novelscraper
+# Version Control
+
+v1.1.0 8/1/18 - MINOR: Wuwuro Bot now detects invalid filenames and changes them appropriately, and some other minor changes.
+
+v1.2.0 8/1/18 - MINOR: Wuwuro now finds the title himself so the naming is less prone to errors.
+
+v1.3.0 8/1/18 - MINOR: He now recognizes the chapters that he has downloaded before.
+
+v1.3.1 8/1/18 - PATCH: Little changes to notification messages, and changed bot name to Wukano
+
+v1.4.0 3/26/19 - MINOR: Added proxy for safety, and reverted bot name to Wuwuro.
+
+v2.0.0 3/26/19 - MAJOR: Wuwuro is now backwards compatible to python2.
+
+v2.1.0 3/26/19 - MINOR: Bot uses one dynamic line to display status for less terminal clutter.
+
+v2.1.1 4/17/19 - PATCH: Stops if failed to write file, and some other changes.

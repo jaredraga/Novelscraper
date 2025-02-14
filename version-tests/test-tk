@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+# Dont remove shebang. Not part of codes below.
+
+from tkinter import *
+
+def gui_on_entry_click(event):
+	# whenever an entry is clicked
+	if entry.cget("fg") == "grey":
+		entry.delete(0, END) # delete all the text in the entry
+		entry.insert(END, "") # Insert blank for user input
+		entry.config(fg = "black")
+def gui_on_focusout(event):
+	if re.sub(r"\s+", "", entry.get()) == "": # the regex removes any whitespace
+		entry.delete(0, END)
+		entry.insert(END, "Enter your username...")
+		entry.config(fg = "grey")
+
+root = Tk()
+
+label = Label(root, text="User: ")
+label.pack(side="left")
+
+entry = Entry(root, bd=1)
+entry.insert(END, 'Enter your user name...')
+
+entry.bind("<FocusIn>", gui_on_entry_click)
+entry.bind("<FocusOut>", gui_on_focusout)
+entry.config(fg = "grey")
+
+entry.pack(side="left")
+
+root.mainloop()
